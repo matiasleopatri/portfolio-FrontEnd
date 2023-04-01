@@ -1,26 +1,79 @@
-<nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
-        <img src="imagenes/arg-programa.png" width="100" alt="logo AP">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbar-Toggler">
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sobre-mi">sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-        
+<nav class="fixed-top navbar navbar-light navbar-expand">
+  <a href="https://argentinaprograma.inti.gob.ar/" class="navbar-brand has-logo">
+    <span class="logo d-none d-sm-inline">
+      <img src="//argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png" alt="logoAP">
+    </span>
+  </a>
+ 
+  <ul class="navbar-nav d-dm-flex custom-menus"></ul>
+  <ul class="nav navbar-nav ml-auto">
+    <div class="d-lg-block"></div>
+      <li class="nav-item lang-menu"></li>
+      <div class="navbar-brand"><a href="https://github.com/matiasleopatri/"><i class="bi bi-github"></i></a></div>
+      <div class="navbar-brand"><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></div>
+      <div class="navbar-brand"><a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a></div>
+      <li class="usermenu">
+        <span class="login">
+          <button type="button" class="btn btn-outline-primary border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img class="rounded-circle" src="//argentinaprograma.inti.gob.ar/theme/image.php/moove/core/1676134779/u/f2" alt="">
+          </button>
+        </span>
+      </li>
+    
+  </ul>
+
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <label for="inputPassword5" class="form-label">Password</label>
+        <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                 
+      </div>
+      <div class="modal-footer">        
+        <button type="button" class="btn btn-primary">Entrar</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Registrarse
+        </button>
       </div>
     </div>
-  </nav>
+  </div>
+</div>
+
+<!-- Modal2 registro-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
