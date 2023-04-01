@@ -1,14 +1,40 @@
 <span>
-    <div>
-        <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
+    <div class="hero align-items-stretch">
+        <div class="hero-banner">
+            <img class="hero-banner-imagen img-fluid rounded-circle imagen-perfil"
+                src=".\assets\imagenes\20200102_200252.jpg" alt="">
+            <button type="button" class="btn btn-outline-primary border-0 float-end" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <i class="bi bi-pencil-square"></i>
+            </button>
+            <h1> Hola, soy Fabio Matias Leopatri</h1>
+            <h2>Full Stack Developer Jr.</h2>
+        </div>
     </div>
-   <div class="hero align-items-stretch">
-    <div class="hero-banner">
-        <img class="hero-banner-imagen img-fluid rounded-circle imagen-perfil" src=".\assets\imagenes\20200102_200252.jpg" alt="">
-        <h1> Hola, soy Fabio Matias Leopatri</h1>
-        <h2>Full Stack Developer Jr.</h2>
-    </div>
-</div> 
 </span>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                   
+        </div>
+        <div class="modal-footer">        
+          <button type="button" class="btn btn-primary">Entrar</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Registrarse
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
